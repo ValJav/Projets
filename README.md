@@ -96,10 +96,10 @@ Users should be able to:
 ## My process
 ### Setup
 Initially found it challenging to figure out how to decide how to arrange the form and where state should live. I started with everything inside one form component, but as the component grew it became difficult to keep track of everything, So I ultimately decided to have a <i>`<Form>`([code]() | [live]())</i> component with all of the nested childeren for each step. Each step has a decent amount of functionaly and styling so I decided this was the best approach.
-- `<step-two-plan-details>`([code]() | [live]())
+- `<step-two-chauffagePrincipale-details>`([code]() | [live]())
   - `<step-one-plan-details>`([code]() | [live]())
-  - `<step-two-plan-details>`([code]() | [live]())
-  - `<step-three-add-ons.component>`([code]() | [live]())
+  - `<step-two-chauffagePrincipale-details>`([code]() | [live]())
+  - `<step-three-piscine.component>`([code]() | [live]())
   - `<step-four-plan-details>`([code]() | [live]())
   - `<step-five-plan-details>`([code]() | [live]())
 
@@ -141,7 +141,7 @@ goToNextStep(number: number) {
       planCost: [9],
       totalCost: [9]
     }),
-    addOnDetails: this.fb.group({
+    piscineDetails: this.fb.group({
       service: [false],
       serviceCost: [0],
       storage: [false],

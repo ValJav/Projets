@@ -13,24 +13,16 @@ export class FormService {
 
   multiStepForm: FormGroup = this.fb.group({
     personalDetails: this.fb.group({
-      name: ['', [Validators.required, Validators.minLength(4)]],
-      email: ['', [Validators.required, Validators.email]],
-      phone: ['', [Validators.required, Validators.minLength(10)]],
+      name: ['', [Validators.required]],
+      email: ['', [Validators.required]],
+      phone: ['', [Validators.required]],
 
     }),
-    planDetails: this.fb.group({
-      plan: ['arcade', [Validators.required]],
-      duration: ['monthly', [Validators.required]],
-      planCost: [9],
-      totalCost: [9]
+    chauffagePrincipale: this.fb.group({
+      chauffagePrincipale: ['Electrique', [Validators.required]],
     }),
-    addOnDetails: this.fb.group({
-      service: [false],
-      serviceCost: [0],
-      storage: [false],
-      storageCost: [0],
-      customization: [false],
-      customizationCost: [0],
+    piscine: this.fb.group({
+      piscine: ['Pas de piscine', [Validators.required]],
     })
   })
 

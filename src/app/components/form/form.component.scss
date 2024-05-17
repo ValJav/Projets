@@ -46,8 +46,8 @@ form label {
     padding: 1rem;
     margin: auto auto;
     @include variables.flexSpaceBetween(row);
-    height: 37.5rem;
-    width: 58.75rem;
+    height: 100vh;
+    width: 100vw;
   }
 
   .row {
@@ -57,7 +57,7 @@ form label {
   }
 
   .column {
-    width: 40.625rem;
+    width: 100vw;
     @include variables.flexSpaceBetween(column);
     height: 35.5rem;
     padding-top: 3.5rem;

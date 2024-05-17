@@ -9,8 +9,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 
 import { StepOnePersonalDetailsComponent } from './components/form/form-steps/step-one-personal-details/step-one-personal-details.component';
-import { StepTwoPlanDetailsComponent } from './components/form/form-steps/step-two-plan-details/step-two-plan-details.component';
-import { StepThreeAddOnsComponent } from './components/form/form-steps/step-three-add-ons/step-three-add-ons.component';
+import { StepTwoChauffagePrincipaleComponent } from './components/form/form-steps/step-two-chauffagePrincipale-details/step-two-chauffagePrincipale-details.component';
+import { StepThreePiscineComponent } from './components/form/form-steps/step-three-piscine/step-three-piscine.component';
 import { StepFourSummaryComponent } from './components/form/form-steps/step-four-summary/step-four-summary.component';
 import { StepFiveConfimComponent } from './components/form/form-steps/step-five-confim/step-five-confim.component';
 import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
@@ -24,8 +24,8 @@ import { MaterialModule } from './material.module';
     ProgressionButtonsComponent,
     FormComponent,
     StepOnePersonalDetailsComponent,
-    StepTwoPlanDetailsComponent,
-    StepThreeAddOnsComponent,
+    StepTwoChauffagePrincipaleComponent,
+    StepThreePiscineComponent,
     StepFourSummaryComponent,
     StepFiveConfimComponent
   ],

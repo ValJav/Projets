@@ -21,17 +21,7 @@ export class ProgressionButtonsComponent implements OnInit {
   }
 
   nextStep() {
-    if ((this.activeStep$ == 1) && (this.stepForm.controls['personalDetails'].pristine) && (!this.stepForm.controls['personalDetails'].touched)) {
-      // TO-DO => display error message if step 1 is skipped
-
-      // console.log(this.stepForm.controls['personalDetails'].pristine, !this.stepForm.controls['personalDetails'].touched)
-
-    } else {
       this.formService.goToNextStep(this.activeStep$);
-    }
-
-
-
   }
   goBack() {
     this.formService.goBackToPreviousStep(this.activeStep$);

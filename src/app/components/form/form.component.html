@@ -7,14 +7,10 @@
                       name="stepForm"
                       (submit)="confirmAndSubmitForm()">
 
-          <app-step-one-personal-details *ngIf="activeStep$ == 1"
-                                         formGroupName="personalDetails"></app-step-one-personal-details>
-          <app-step-two-plan-details *ngIf="activeStep$ == 2"
-                                     formGroupName="planDetails"></app-step-two-plan-details>
-          <app-step-three-add-ons *ngIf="activeStep$ == 3"
-                                  formGroupName="addOnDetails"></app-step-three-add-ons>
-          <app-step-four-summary *ngIf="activeStep$ == 4"
-                                 [stepForm]="stepForm"></app-step-four-summary>
+          <app-step-one-personal-details *ngIf="activeStep$ == 1" formGroupName="personalDetails"></app-step-one-personal-details>
+          <app-step-two-chauffagePrincipale-details *ngIf="activeStep$ == 2" formGroupName="chauffagePrincipale"></app-step-two-chauffagePrincipale-details>
+          <app-step-three-piscine *ngIf="activeStep$ == 3" formGroupName="piscine"></app-step-three-piscine>
+          <app-step-four-summary *ngIf="activeStep$ == 4" [formGroup]="stepForm"></app-step-four-summary>
 
           <app-step-five-confim *ngIf="activeStep$ == 5"></app-step-five-confim>
         </ng-container>

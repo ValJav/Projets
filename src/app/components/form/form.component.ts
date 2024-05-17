@@ -21,6 +21,7 @@ export class FormComponent implements OnInit {
     this.formService.activeStep$.subscribe(
       step => this.activeStep$ = step
     );
+
   }
 
 

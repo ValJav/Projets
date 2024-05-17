@@ -1,0 +1,33 @@
+<ng-container [formGroup]="stepForm">
+  <mat-card class="step-two">
+    <mat-card-header>
+      <mat-card-title-group class="title">
+        <mat-card-title role="heading"
+                        aria-level="1"
+                        class="select">Chauffage principale</mat-card-title>
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+
+      <mat-button-toggle-group name="options"
+                               #group="matButtonToggleGroup"
+                               aria-label="chauffagePrincipaleOptions"
+                               [value]="group.value"
+                               (change)="onChauffagePrincipaleChange(group.value)">
+        <mat-button-toggle *ngFor="let chauffagePrincipale of chauffagePrincipaleOptions"
+                           [value]="chauffagePrincipale.chauffagePrincipale"
+                           [checked]="chauffagePrincipale.chauffagePrincipale === chauffagePrincipaleType">
+
+          <div class="chauffagePrincipale">
+            <img mat-card-image
+                 src="{{ chauffagePrincipale.icon }}"
+                 alt="chauffagePrincipale-icon" />
+            <div class="details">
+              <span class="chauffagePrincipale_title">{{chauffagePrincipale.chauffagePrincipale | titlecase}}</span>
+            </div>
+          </div>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+    </mat-card-content>
+  </mat-card>
+</ng-container>

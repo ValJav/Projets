@@ -1,0 +1,33 @@
+<ng-container [formGroup]="stepForm">
+  <mat-card class="step-three">
+    <mat-card-header>
+      <mat-card-title-group class="title">
+        <mat-card-title role="heading"
+                        aria-level="1"
+                        class="select">Piscine</mat-card-title>
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+
+      <mat-button-toggle-group name="options"
+                               #group="matButtonToggleGroup"
+                               aria-label="piscineOptions"
+                               [value]="group.value"
+                               (change)="onPiscineChange(group.value)">
+        <mat-button-toggle *ngFor="let piscine of piscineOptions"
+                           [value]="piscine.piscineType"
+                           [checked]="piscine.piscineType === piscineType">
+
+          <div class="piscine">
+            <img mat-card-image
+                 src="{{ piscine.icon }}"
+                 alt="piscine-icon" />
+            <div class="details">
+              <span class="piscine_title">{{piscine.piscineType | titlecase}}</span>
+            </div>
+          </div>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+    </mat-card-content>
+  </mat-card>
+</ng-container>

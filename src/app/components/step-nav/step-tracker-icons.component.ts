@@ -11,7 +11,7 @@ export class StepTrackerIconsComponent implements OnInit {
   stepDetails: { step: number; description: string;}[] = [
     { step: 1, description: 'Your info' },
     { step: 2, description: 'Select plan' },
-    { step: 3, description: 'Add-ons' },
+    { step: 3, description: 'piscine' },
     { step: 4, description: 'Summary' }
   ]
   activeStep$: number;

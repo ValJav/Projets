@@ -23,14 +23,14 @@ mat-button-toggle {
 }
 
 button .mat-button-toggle-button,
-.plan {
+.piscine {
   height: 4.8rem;
   @include variables.flexCenter(row);
 }
 .mat-button-toggle-label-content{
   padding: 0 !important;
 }
-.plan {
+.piscine {
   padding: 1rem 0;
   width: 100%;
 }
@@ -55,7 +55,7 @@ img {
   display: inline-block;
 }
 
-.plan_title {
+.piscine_title {
   color: variables.$sub-nautical;
   @include variables.body-primary-xs;
 }
@@ -101,7 +101,7 @@ label {
 
   .mat-button-toggle-group {
     border: none;
-    width: 28.125em;
+    width: 30vw;
     margin: 1rem 0 2rem 0;
     @include variables.flexSpaceBetween(row);
     flex-direction: row !important;
@@ -117,7 +117,7 @@ label {
     margin: 0;
   }
 
-  .plan {
+  .piscine {
     height: 10rem;
     @include variables.flexSpaceBetween(column);
     align-items: baseline;
